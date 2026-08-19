@@ -58,6 +58,8 @@ spec:
     disableContainerRunCapabilities: false
 ```
 
+## NOTE - This only works if you are updating the CR directly. If you are using GitOps or ArgoCD, other lines will be added to the CR with specific security contexts. Recommend updating the operator manually first, allow those lines to be added, then leverage GitOps or ArgoCD
+
 # Set Up Git Config:
 
 ## OpenShift Dev Spaces <3.17
